@@ -53,7 +53,9 @@ var Boxlayout = (function() {
 
 				if( !$section.data( 'open' ) ) {
 					$section.data( 'open', true ).addClass( 'bl-expand bl-expand-top' );
-					$el.addClass( 'bl-expand-item' );	
+					$el.addClass( 'bl-expand-item' );
+					// added by Ru
+					$('body').scrollTop(0);
 				}
 
 			} ).find( 'span.bl-icon-close' ).on( 'click', function() {

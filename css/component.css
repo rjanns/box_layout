@@ -59,20 +59,19 @@ a:hover {
 }
 
 /* 
-This is the code for the main boxes. Edit colors and background images here.
-***
-**/
+This is the top left box. I added some customizations here like the background image.
+*/
 
 .bl-main > section:first-child {
 	top: 0;
 	left: 0;
     background: linear-gradient(
-      rgba(7, 143, 181, 0.70), 
-      rgba(7, 143, 181, 0.70)
+      rgba(125, 223, 250, 0.70), 
+      rgba(125, 223, 250, 0.70)
     ),
-    url(../images/cats.jpg);
+    url(../images/rudolf1.jpg);
     background-size: auto;
-    background-position: center;  
+    background-position: center;
 }
 
 .bl-main > section:nth-child(2) {
@@ -82,7 +81,7 @@ This is the code for the main boxes. Edit colors and background images here.
       rgba(152, 125, 250, 0.70), 
       rgba(152, 125, 250, 0.70)
       ),
-    url(../images/cats.jpg);
+    url(../images/acgames.png);
     background-position: center; 
 }
 
@@ -93,7 +92,7 @@ This is the code for the main boxes. Edit colors and background images here.
       rgba(250, 152, 125, 0.70), 
       rgba(250, 152, 125, 0.70)
     ),
-    url(../images/cats.jpg);
+    url(../images/acgames.png);
     background-position: center; 
 }
 
@@ -101,16 +100,12 @@ This is the code for the main boxes. Edit colors and background images here.
 	top: 50%;
 	left: 50%;
 	background: linear-gradient(
-      rgba(226, 165, 9, 0.70), 
-      rgba(226, 165, 9, 0.70)
+      rgba(250, 215, 125, 0.70), 
+      rgba(250, 215, 125, 0.70)
     ),
-    url(../images/cats.jpg);
+    url(../images/acgames.png);
     background-position: center; 
 }
-
-/* END code for the main boxes.
-***
-**/
 
 .bl-box {
 	position: relative;
@@ -327,9 +322,9 @@ div.bl-panel-items > div {
 div.bl-panel-items nav {
 	position: absolute;
 	z-index: 9999;
-	width: 216px;
-	right: 0;
-	top: 0px;
+/*	width: 216px;*/
+	left: 50%;
+	top: 0;
 	margin-left: -108px;
 	opacity: 0;
 	-webkit-transition: opacity 0.2s ease-in-out 0.5s;
@@ -354,7 +349,9 @@ div.bl-panel-items nav span.bl-next-work {
 
 div.bl-panel-items.bl-panel-items-show nav {
 	opacity: 1;
-	top: -600px;
+	position: fixed;
+	background: #2F81AB;
+	padding: 5px;
 }
 
 div.bl-panel-items > div.bl-show-work {
@@ -392,7 +389,9 @@ div.bl-panel-items > div.bl-hide-current-work {
 
 .bl-main > section.bl-expand {
 	width: 100%;
-	height: 100%;
+	/*added rules to expand the boxes*/
+	height: 100% !important;
+	position: absolute !important;
 	top: 0;
 	left: 0;
 }
@@ -402,26 +401,22 @@ div.bl-panel-items > div.bl-hide-current-work {
 }
 
 
-/** BEGIN colors for the expanded sections. They should match the colors above (line 62), except the opacity (alpha) should be set at 1.
-***
-**/
+/* Colors for the expanded sections */
 
 .bl-main > section:first-child.bl-expand {
-	background: rgba(7, 143, 181, 1);
+	background: #339cf7;
 }
 .bl-main > section:nth-child(2).bl-expand {
-	background: rgba(152, 125, 250, 1);
+	background: #987dfa;
 }
 .bl-main > section:nth-child(3).bl-expand {
-	background: rgba(250, 152, 125, 1);
+	background: #fa987d;
 }
 .bl-main > section:nth-child(4).bl-expand {
-	background: rgba(226, 165, 9, 1);
+	background: #fad77d;
 }
 
-/** END colors for the expanded sections.
-***
-**/
+
 
 .bl-main.bl-expand-item > section:not(.bl-expand),
 .bl-main.bl-expand-item > section.bl-scale-down {
@@ -487,4 +482,41 @@ section.bl-expand .bl-icon-close {
 	.bl-content > ul li {
 		width: 40%;
 	}
+}
+
+@media screen and (max-width: 600px) {
+
+/*	.bl-main > section:first-child {
+		top: 50%;
+		width: 100%;
+	}
+
+
+.bl-main > section:nth-child(2) {
+	top: 50%;
+	left: 0;
+}*/
+
+#section1, #bl-work-section, #section3, #section4 {
+	position: static;
+	width: 100%;
+	height: 25%;
+}
+
+.fullheight {
+	height: 100%;
+}
+
+.container, .bl-main {
+	height: 1000px;
+}
+
+.bl-content {
+	right: 0;
+	left: 0;
+}
+
+div.bl-panel-items > div > div 
+{
+	width: 90%;
 }
