@@ -69,7 +69,7 @@ This is the top left box. I added some customizations here like the background i
       rgba(125, 223, 250, 0.70), 
       rgba(125, 223, 250, 0.70)
     ),
-    url(../images/rudolf1.jpg);
+    url(../images/cats.jpg);
     background-size: auto;
     background-position: center;
 }
@@ -81,7 +81,7 @@ This is the top left box. I added some customizations here like the background i
       rgba(152, 125, 250, 0.70), 
       rgba(152, 125, 250, 0.70)
       ),
-    url(../images/acgames.png);
+    url(../images/cats.jpg);
     background-position: center; 
 }
 
@@ -92,7 +92,7 @@ This is the top left box. I added some customizations here like the background i
       rgba(250, 152, 125, 0.70), 
       rgba(250, 152, 125, 0.70)
     ),
-    url(../images/acgames.png);
+    url(../images/cats.jpg);
     background-position: center; 
 }
 
@@ -103,7 +103,7 @@ This is the top left box. I added some customizations here like the background i
       rgba(250, 215, 125, 0.70), 
       rgba(250, 215, 125, 0.70)
     ),
-    url(../images/acgames.png);
+    url(../images/cats.jpg);
     background-position: center; 
 }
 
@@ -486,18 +486,7 @@ section.bl-expand .bl-icon-close {
 
 @media screen and (max-width: 600px) {
 
-/*	.bl-main > section:first-child {
-		top: 50%;
-		width: 100%;
-	}
-
-
-.bl-main > section:nth-child(2) {
-	top: 50%;
-	left: 0;
-}*/
-
-#section1, #bl-work-section, #section3, #section4 {
+#section1, #section2, #section3, #section4 {
 	position: static;
 	width: 100%;
 	height: 25%;

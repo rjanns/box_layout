@@ -13,7 +13,7 @@ var Boxlayout = (function() {
 	var $el = $( '#bl-main' ),
 		$sections = $el.children( 'section' ),
 		// works section
-		$sectionWork = $( '#bl-work-section' ),
+		$sectionWork = $( '#section2' ),
 		// work items
 		$workItems = $( '#bl-work-items > li' ),
 		// work panels
